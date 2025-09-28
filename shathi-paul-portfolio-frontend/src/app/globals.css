@@ -78,45 +78,163 @@
   --sidebar-ring: oklch(0.708 0 0);
 }
 
-.dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
-}
-
 @layer base {
-  * {
+  /* * {
     @apply border-border outline-ring/50;
   }
   body {
     @apply bg-background text-foreground;
+  } */
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+}
+
+body {
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.leadingText {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-image: linear-gradient(#3e2c23, transparent 1px),
+    linear-gradient(to right, #3e2c23, transparent 1px);
+  background-size: 100% 48px, 51px 100%;
+  opacity: 0.15;
+  pointer-events: none;
+} */
+
+.shadow-inset-blue {
+  box-shadow: inset 1px 1px 5px 0px #6b4f3d60;
+}
+
+@theme {
+  --color-primary: #3e2325;
+  /* --color-secondary: #f0e6e4; */
+  --color-secondary: #ebe9e9;
+  --color-chocolate: #251a15;
+  --color-gold: #6b4f3d;
+  --color-black: #1a1a1a;
+  --color-white: #ffffff;
+  --color-lightGray: #c0c0c0;
+
+  @keyframes bounce {
+    0%,
+    100% {
+      transform: translateY(-25%);
+      animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    50% {
+      transform: none;
+      animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+  }
+
+  @keyframes shine {
+    0% {
+      background-position: -200% 0;
+    }
+    100% {
+      background-position: 200% 0;
+    }
+  }
+}
+
+/** Swiper */
+/* .swiper {
+  padding-bottom: 20px !important;
+} */
+
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  width: 70% !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+  height: 10px !important;
+  width: 10px;
+  transition: 0.25s !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #3e2325 !important;
+  width: 40px !important;
+  border-radius: 4px !important;
+  height: 10px !important;
+}
+
+/** Swiper Reviews */
+
+.reviewSwiper .swiper-slide {
+  opacity: 0.5 !important;
+  scale: 0.8 !important;
+  transition: 0.7s !important;
+  /* width: 585px !important; */
+  border-radius: 30px !important;
+  border: 1px solid rgba(211, 211, 211, 0.281) !important;
+}
+
+.reviewSwiper .swiper-slide-active {
+  opacity: 1 !important;
+  scale: 1 !important;
+  transition: 0.7s !important;
+  /* width: 585px !important; */
+  border-radius: 30px !important;
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .reviewSwiper .swiper-slide {
+    width: 100% !important;
+    padding: 0px 80px !important;
+  }
+
+  .reviewSwiper .swiper-slide-active {
+    width: 100% !important;
+    padding: 0px 80px !important;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1280px) {
+  .reviewSwiper .swiper-slide {
+    width: 100% !important;
+    padding: 0px 150px !important;
+  }
+
+  .reviewSwiper .swiper-slide-active {
+    width: 100% !important;
+    padding: 0px 150px !important;
   }
 }
