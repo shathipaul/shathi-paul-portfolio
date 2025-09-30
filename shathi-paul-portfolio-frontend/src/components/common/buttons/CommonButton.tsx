@@ -4,7 +4,7 @@ const CommonButton = ({ text, onClick }: ICommonButton) => {
   return (
     <button
       onClick={onClick}
-      className="group relative overflow-hidden text-sm lg:text-base shadow-md rounded-xl bg-primary hover:bg-chocolate text-secondary py-2 md:py-3 px-3 lg:px-6 duration-700"
+      className="group relative overflow-hidden text-sm shadow-md rounded-xl bg-primary hover:bg-chocolate text-secondary py-2 px-3 lg:px-6 duration-700"
     >
       <span className="hidden relative md:inline-flex items-center">
         {text.split("").map((char, index) => (

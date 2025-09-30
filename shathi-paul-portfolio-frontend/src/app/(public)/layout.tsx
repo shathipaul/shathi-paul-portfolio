@@ -11,7 +11,9 @@ const PublicLayout = ({
     <>
       <BackgroundSquares />
       <Navbar />
-      <main className="max-w-[1400px] mx-auto px-6">{children}</main>
+      <main className="max-w-[1400px] mx-auto px-6 text-primary relative">
+        {children}
+      </main>
       <Footer />
     </>
   );

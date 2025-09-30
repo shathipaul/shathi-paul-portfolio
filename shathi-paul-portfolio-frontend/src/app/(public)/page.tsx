@@ -1,5 +1,7 @@
+import HomeMain from "@/components/modules/home/HomeMain";
+
 const HomePage = () => {
-  return <div className="h-screen">Home</div>;
+  return <HomeMain />;
 };
 
 export default HomePage;

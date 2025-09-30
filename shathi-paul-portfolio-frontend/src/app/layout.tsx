@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter, Poppins, Playfair_Display } from "next/font/google";
 import "./globals.css";
+import "swiper/css";
+import "swiper/css/pagination";
 
 const inter = Inter({
   weight: ["400"],

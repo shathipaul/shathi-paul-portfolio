@@ -38,10 +38,8 @@ const Navbar = () => {
 
   const menuData = [
     { name: "Home", link: "/" },
-    // { name: "About", link: "/#about" },
     { name: "Services", link: "/services" },
     { name: "Projects", link: "/projects" },
-    // { name: "Skills", link: "/#skills" },
     { name: "Blog", link: "/blog" },
     { name: "Contact", link: "/#contact" },
   ];
