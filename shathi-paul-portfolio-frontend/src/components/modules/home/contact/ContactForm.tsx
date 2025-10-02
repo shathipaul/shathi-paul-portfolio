@@ -7,7 +7,7 @@ const ContactForm = () => {
   const [loading, setLoading] = useState(false);
   console.log("contact");
   return (
-    <Form className="relative z-30" action={create}>
+    <Form className="relative z-30 w-full lg:w-1/2" action={create}>
       <div className="my-3">
         <input
           className="w-full py-3 px-4 rounded-2xl focus:outline-none bg-white/80 hover:bg-white/94"

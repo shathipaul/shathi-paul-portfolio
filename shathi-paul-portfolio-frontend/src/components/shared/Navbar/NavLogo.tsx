@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import logo from "@/assets/images/logo.png";
+import logo from "@/assets/images/shathi.png";
 import logo2 from "@/assets/images/fav.png";
 
 const NavLogo = () => {
@@ -8,7 +8,7 @@ const NavLogo = () => {
     <>
       <Link
         href="/"
-        className="hidden md:block md:w-48 xl:w-60"
+        className="hidden md:block md:w-48 xl:w-20"
         aria-label="Go to Shathi Paul - Web Developer Homepage"
       >
         <Image

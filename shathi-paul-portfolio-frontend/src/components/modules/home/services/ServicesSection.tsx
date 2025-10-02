@@ -96,7 +96,7 @@ const ServicesSection = () => {
     },
   ];
   return (
-    <div id="services" className="scroll-mt-28">
+    <div id="services" className="scroll-mt-28 mb-16">
       <CommonTitle text="My Services" />
 
       <div className="relative  h-[1000px] md:h-[500px] overflow-hidden w-full">

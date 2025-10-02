@@ -37,7 +37,7 @@ const AboutSection = () => {
         {/* Border Wrapper */}
         <div className="relative w-full md:w-[400px] h-[550px] xl:ml-36 mb-16 lg:mb-0">
           {/* Border */}
-          <div className="absolute w-[90%] md:w-[360px] h-[93%] md:h-[505px] border-5 border-primary right-0 bottom-0 z-30"></div>
+          <div className="absolute w-[90%] md:w-[360px] h-[93%] md:h-[505px] border-5 border-primary right-0 bottom-0"></div>
 
           {/* Icons on top-left */}
           <div className="absolute top-6 left-0 z-40 flex flex-col gap-3 bg-secondary py-3 px-2">
@@ -68,7 +68,7 @@ const AboutSection = () => {
         </div>
       </div>
       {/* Text Section */}
-      <div className="flex flex-col justify-center text-center lg:text-left gap-4 z-30">
+      <div className="flex flex-col justify-center text-center lg:text-left gap-4">
         <h1 className="text-3xl md:text-4xl lg:text-5xl tracking-wider">
           Hey, Shathi here
         </h1>

@@ -3,7 +3,7 @@ import ReviewCards from "./ReviewCards";
 
 const ReviewsSection = () => {
   return (
-    <div>
+    <div className="mb-16">
       <CommonTitle text="Happy & Satisfied Clients" />
       <ReviewCards />
     </div>

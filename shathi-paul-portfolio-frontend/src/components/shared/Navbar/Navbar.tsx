@@ -52,7 +52,7 @@ const Navbar = () => {
           scrolled ? "bg-secondary shadow-md" : "bg-transparent"
         }`}
       >
-        <div className="flex justify-evenly xl:justify-between items-center px-4 md:px-10 py-4">
+        <div className="flex justify-evenly xl:justify-between items-center px-4 md:px-10 py-2">
           <div className="w-1/3 h-full flex items-center justify-start">
             <NavLogo />
           </div>

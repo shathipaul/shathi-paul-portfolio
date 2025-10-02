@@ -170,9 +170,9 @@ h6 {
 }
 
 /** Swiper */
-/* .swiper {
+.swiper {
   padding-bottom: 20px !important;
-} */
+}
 
 .swiper-pagination-fraction,
 .swiper-pagination-custom,

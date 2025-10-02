@@ -25,7 +25,7 @@ export default function Squares() {
     };
 
     const draw = () => {
-      ctx.fillStyle = "#f0e6e4"; // background color
+      ctx.fillStyle = "#f0e6e400"; // background color
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
       const cols = Math.ceil(canvas.width / dpr / size);
