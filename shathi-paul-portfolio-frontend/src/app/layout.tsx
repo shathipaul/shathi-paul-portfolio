@@ -3,6 +3,7 @@ import { Inter, Poppins, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import "swiper/css";
 import "swiper/css/pagination";
+import BackgroundSquares from "@/components/background/BackgroundSquares";
 
 const inter = Inter({
   weight: ["400"],
@@ -33,6 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} antialiased bg-secondary `}>
+        <BackgroundSquares />
         {children}
       </body>
     </html>
