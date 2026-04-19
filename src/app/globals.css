@@ -1,0 +1,102 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  /* Primary palette — light mode (default) */
+  --background: #f0eee9;
+  --bg-soft: #efe9dd;
+  --card-highlight: #fcfbf7;
+  --foreground: #1f231a;
+  --foreground-secondary: #4a5240; /* was #5c6452 — darker for body readability */
+  --border-tone: #d9d4c7;
+  --warm-sand: #d8d0bf;
+  --olive: #6b7a52;
+  --olive-deep: #4e5b3e;
+  --moss: #879072;
+  --accent: #b06a40; /* new — terracotta CTA color */
+}
+
+.dark {
+  --background: #1d1515;
+  --bg-soft: #181412; /* was #111111 — warmer, more depth */
+  --card-highlight: #161616;
+  --foreground: #e5e5e5;
+  --foreground-secondary: #a3a3a3;
+  --border-tone: #2a2a2a;
+  --warm-sand: #332e2e; /* was #3a3a3a — retains warm identity */
+  --olive: #879072;
+  --olive-deep: #6b7a52;
+  --moss: #96a080; /* was #6b7a52 — now a distinct lighter step */
+  --accent: #c97d50; /* new — lightened terracotta for dark bg */
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-bg-soft: var(--bg-soft);
+  --color-card: var(--card-highlight);
+  --color-foreground: var(--foreground);
+  --color-foreground-secondary: var(--foreground-secondary);
+  --color-border: var(--border-tone);
+  --color-sand: var(--warm-sand);
+  --color-olive: var(--olive);
+  --color-olive-deep: var(--olive-deep);
+  --color-moss: var(--moss);
+  --color-accent: var(--accent); /* new token */
+  --font-sans: var(--font-montserrat);
+}
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-montserrat), system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+}
+
+/* Hide native cursor — custom cursor renders instead */
+* {
+  cursor: none !important;
+}
+
+/* Blog post HTML content rendered from the CMS */
+.blog-content p {
+  margin-bottom: 1.5rem;
+  line-height: 1.9;
+}
+.blog-content h1,
+.blog-content h2,
+.blog-content h3 {
+  font-weight: 300;
+  margin-bottom: 0.75rem;
+  margin-top: 2rem;
+}
+.blog-content ul,
+.blog-content ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.blog-content li {
+  line-height: 1.8;
+}
+.blog-content strong {
+  font-weight: 400;
+}
+.blog-content a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  opacity: 0.7;
+}
+.blog-content a:hover {
+  opacity: 1;
+}
