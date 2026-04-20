@@ -61,12 +61,12 @@ export function WorksClient({ projects }: WorksClientProps) {
         <div className="flex flex-row items-end justify-between mb-1">
           <h1 className="text-base font-light tracking-widest">WORKS</h1>
           <a
-            href={profile.socials.github}
+            href={profile.socials.calendly}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-xs font-light opacity-60 hover:opacity-100 transition-opacity"
+            className="text-[clamp(0.7rem,0.9vw,1rem)] font-light mb-1 text-foreground-secondary hover:text-foreground transition-colors duration-300"
           >
-            /{profile.socials.github.split("/").pop()}
+            /book a call
           </a>
         </div>
         <div className="w-full h-px bg-[#888888aa] mb-10" />
@@ -188,12 +188,12 @@ export function WorksClient({ projects }: WorksClientProps) {
               WORKS
             </h1>
             <a
-              href={profile.socials.github}
+              href={profile.socials.calendly}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-end text-[clamp(0.8rem,1vw,1.5rem)] font-light mb-1 opacity-60 hover:opacity-100 transition-opacity"
+              className="text-[clamp(0.7rem,0.9vw,1rem)] font-light mb-1 text-foreground-secondary hover:text-foreground transition-colors duration-300"
             >
-              /{profile.socials.github.split("/").pop()}
+              /book a call
             </a>
           </div>
 

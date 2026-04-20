@@ -3,22 +3,10 @@
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import type { IBlogs } from "@/lib/apiConfig";
-
-function formatDate(iso: string): string {
-  try {
-    return new Date(iso).toLocaleDateString("en-US", {
-      month: "short",
-      day: "numeric",
-      year: "numeric",
-    });
-  } catch {
-    return iso;
-  }
-}
+import type { BlogPost } from "@/data/blogs";
 
 interface BlogsPageProps {
-  posts: IBlogs[];
+  posts: BlogPost[];
 }
 
 export function BlogsPage({ posts }: BlogsPageProps) {
@@ -50,15 +38,15 @@ export function BlogsPage({ posts }: BlogsPageProps) {
             }}
           >
             <Link
-              href={`/blogs/${post._id}`}
+              href={`/blogs/${post.slug}`}
               className="group flex flex-col lg:flex-row lg:items-start gap-5 lg:gap-8 py-8 border-b border-[#888888aa] hover:opacity-80 transition-opacity duration-300"
             >
               {/* Thumbnail — top on mobile, left column on desktop */}
-              {post.thumbnail && (
+              {post.image && (
                 <div className="relative w-full lg:w-[28vw] aspect-2/1 overflow-hidden shrink-0">
                   <div className="absolute inset-0 bg-neutral-900" />
                   <Image
-                    src={post.thumbnail}
+                    src={post.image}
                     alt={post.title}
                     fill
                     className="object-cover object-top opacity-75 transition-opacity duration-300 group-hover:opacity-90"
@@ -75,7 +63,7 @@ export function BlogsPage({ posts }: BlogsPageProps) {
                     [{String(i + 1).padStart(2, "0")}]
                   </span>
                   <span className="text-[clamp(0.55rem,0.7vw,0.75rem)] font-light tracking-[0.25em] uppercase border border-[#888888aa] rounded-full px-3 py-0.5">
-                    {post.tag}
+                    {post.category}
                   </span>
                 </div>
 
@@ -84,13 +72,13 @@ export function BlogsPage({ posts }: BlogsPageProps) {
                   {post.title}
                 </h2>
                 <p className="text-[clamp(0.65rem,0.85vw,0.95rem)] font-light leading-relaxed text-neutral-500 dark:text-neutral-400">
-                  {post.subTitle}
+                  {post.excerpt}
                 </p>
 
                 {/* Date + Read arrow */}
                 <div className="flex items-center justify-between mt-auto pt-2">
                   <span className="text-[clamp(0.6rem,0.75vw,0.85rem)] font-light tracking-widest text-neutral-500">
-                    {formatDate(post.createdAt)}
+                    {post.date}
                   </span>
                   <span className="text-[clamp(0.6rem,0.75vw,0.85rem)] font-light tracking-[0.2em] uppercase flex items-center gap-2 opacity-60 group-hover:opacity-100 transition-opacity duration-300">
                     Read

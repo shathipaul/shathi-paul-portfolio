@@ -1,42 +1,36 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { BlogPostPage } from "@/components/BlogPostPage";
+import NavigationSection from "@/components/NavigationSection";
 import { profile } from "@/data/profile";
-import { apiConfig, type IBlogs } from "@/lib/apiConfig";
-
-export const dynamic = "force-dynamic";
+import { blogPosts } from "@/data/blogs";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
 }
 
-async function fetchPost(id: string): Promise<IBlogs | null> {
-  try {
-    const res = await fetch(
-      `${apiConfig.baseUrl}${apiConfig.blogs.getDetails}/${id}`,
-      { cache: "no-cache" }
-    );
-    if (!res.ok) throw new Error(`${res.status}`);
-    const result = await res.json();
-    return result?.data as IBlogs;
-  } catch {
-    return null;
-  }
+export async function generateStaticParams() {
+  return blogPosts.map((post) => ({ slug: post.slug }));
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
-  const post = await fetchPost(slug);
+  const post = blogPosts.find((p) => p.slug === slug);
   if (!post) return {};
   return {
     title: `${post.title} | ${profile.firstName} ${profile.lastName}`,
-    description: post.subTitle,
+    description: post.excerpt,
   };
 }
 
 export default async function BlogPostRoute({ params }: PageProps) {
   const { slug } = await params;
-  const post = await fetchPost(slug);
+  const post = blogPosts.find((p) => p.slug === slug);
   if (!post) notFound();
-  return <BlogPostPage post={post} />;
+  return (
+    <>
+      <BlogPostPage post={post} />
+      <NavigationSection />
+    </>
+  );
 }

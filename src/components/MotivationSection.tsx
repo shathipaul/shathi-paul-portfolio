@@ -34,7 +34,7 @@ export function MotivationSection({ profile }: MotivationSectionProps) {
       </div>
 
       {/* Right: image */}
-      {/* <div className="mt-[5vh] w-[80vw] aspect-8/5 lg:w-[45vw] overflow-hidden lg:mt-0">
+      <div className="mt-[5vh] w-[80vw] aspect-8/5 lg:w-[45vw] overflow-hidden lg:mt-0">
         <Image
           src={profile.motivationImage}
           alt="Cinematic landscape photograph"
@@ -43,7 +43,7 @@ export function MotivationSection({ profile }: MotivationSectionProps) {
           className="w-full h-full object-contain opacity-80"
           sizes="(min-width: 1024px) 35vw, 80vw"
         />
-      </div> */}
+      </div>
     </motion.section>
   );
 }

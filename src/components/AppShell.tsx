@@ -19,11 +19,6 @@ export function AppShell({ children, profile }: AppShellProps) {
         </div>
       </div>
 
-      {/* Fixed copyright — bottom-left, always visible */}
-      <p className="fixed bottom-1 left-[3vw] z-40 hidden text-[clamp(0.5rem,0.8vw,1rem)] font-light text-neutral-500 lg:block">
-        © {profile.copyrightName}
-      </p>
-
       <main className="relative overflow-x-hidden">{children}</main>
     </div>
   );

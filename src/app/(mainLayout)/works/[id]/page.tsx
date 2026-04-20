@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { ProjectDetailPage } from "@/components/ProjectDetailPage";
+import NavigationSection from "@/components/NavigationSection";
 import { projectDetails, getProjectDetail } from "@/data/projectDetails";
 import { profile } from "@/data/profile";
 
@@ -26,5 +27,10 @@ export default async function ProjectDetailRoute({ params }: PageProps) {
   const { id } = await params;
   const project = getProjectDetail(id);
   if (!project) notFound();
-  return <ProjectDetailPage project={project} />;
+  return (
+    <>
+      <ProjectDetailPage project={project} />
+      <NavigationSection />
+    </>
+  );
 }

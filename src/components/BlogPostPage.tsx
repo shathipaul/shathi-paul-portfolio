@@ -3,22 +3,10 @@
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import type { IBlogs } from "@/lib/apiConfig";
-
-function formatDate(iso: string): string {
-  try {
-    return new Date(iso).toLocaleDateString("en-US", {
-      month: "short",
-      day: "numeric",
-      year: "numeric",
-    });
-  } catch {
-    return iso;
-  }
-}
+import type { BlogPost } from "@/data/blogs";
 
 interface BlogPostPageProps {
-  post: IBlogs;
+  post: BlogPost;
 }
 
 export function BlogPostPage({ post }: BlogPostPageProps) {
@@ -50,7 +38,7 @@ export function BlogPostPage({ post }: BlogPostPageProps) {
       </motion.div>
 
       {/* Hero image */}
-      {post.thumbnail && (
+      {post.image && (
         <motion.div
           className="relative w-full aspect-2/1 overflow-hidden mb-[5vh]"
           initial={{ opacity: 0, filter: "blur(2px)" }}
@@ -59,7 +47,7 @@ export function BlogPostPage({ post }: BlogPostPageProps) {
         >
           <div className="absolute inset-0 bg-neutral-900" />
           <Image
-            src={post.thumbnail}
+            src={post.image}
             alt={post.title}
             fill
             className="object-cover object-top opacity-75"
@@ -77,13 +65,13 @@ export function BlogPostPage({ post }: BlogPostPageProps) {
         transition={{ duration: 0.7, ease: "easeOut", delay: 0.15 }}
       >
         <span className="text-[clamp(0.55rem,0.7vw,0.75rem)] font-light tracking-[0.25em] uppercase border border-[#888888aa] rounded-full px-3 py-0.5 self-start">
-          {post.tag}
+          {post.category}
         </span>
         <h1 className="text-[clamp(1.4rem,2.5vw,3rem)] font-light leading-tight">
           {post.title}
         </h1>
         <p className="text-[clamp(0.65rem,0.85vw,1rem)] font-light text-neutral-500 tracking-widest">
-          {formatDate(post.createdAt)}
+          {post.date}
         </p>
       </motion.div>
 
@@ -101,7 +89,7 @@ export function BlogPostPage({ post }: BlogPostPageProps) {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8, ease: "easeOut", delay: 0.35 }}
-        dangerouslySetInnerHTML={{ __html: post.description }}
+        dangerouslySetInnerHTML={{ __html: post.content }}
       />
     </main>
   );

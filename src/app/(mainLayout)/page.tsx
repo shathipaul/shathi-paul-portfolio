@@ -1,7 +1,7 @@
 import { ContactSection } from "@/components/ContactSection";
 import { HeroSection } from "@/components/HeroSection";
 import { MotivationSection } from "@/components/MotivationSection";
-import NavigateSection from "@/components/NavigateSection";
+import NavigationSection from "@/components/NavigationSection";
 import { SkillsSection } from "@/components/SkillsSection";
 import { TestimonialsSection } from "@/components/TestimonialsSection";
 import { profile } from "@/data/profile";
@@ -25,7 +25,7 @@ export default function Home() {
       <ContactSection profile={profile} />
 
       {/* CTAs — right-aligned, inside the skills section */}
-      <NavigateSection />
+      <NavigationSection />
     </>
   );
 }
