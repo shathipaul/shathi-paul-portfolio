@@ -13,6 +13,66 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: "1",
+    title: "TERM LIFE USA",
+    sub: "Insurance / Full Stack",
+    description:
+      "A travel management platform for planning trips, managing destinations, and organizing activities — featuring interactive maps, multi-step booking flows, and multi-role support.",
+    techStack: [
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "Mongoose",
+      "Express",
+      "Tailwind CSS",
+      "Framer Motion",
+      "Redux",
+    ],
+    image: "https://i.ibb.co.com/wNmnmXmv/term-life-usa.jpg",
+    liveUrl: "https://term-life-usa.vercel.app/",
+    // githubUrl: "https://github.com/MdNaimRipto/travel-buddy",
+  },
+  {
+    id: "2",
+    title: "OptimalFolio",
+    sub: "Financial Portfolio Management",
+    description:
+      "A travel management platform for planning trips, managing destinations, and organizing activities — featuring interactive maps, multi-step booking flows, and multi-role support.",
+    techStack: [
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "Mongoose",
+      "Express",
+      "Tailwind CSS",
+      "Framer Motion",
+      "Redux",
+    ],
+    image: "https://i.ibb.co.com/v6rQPDyv/optimalfolio.jpg",
+    liveUrl: "https://optimal-folios.vercel.app/",
+    // githubUrl: "https://github.com/MdNaimRipto/travel-buddy",
+  },
+  {
+    id: "3",
+    title: "Optimal Wealth Advisors",
+    sub: "Financial Advisory",
+    description:
+      "A travel management platform for planning trips, managing destinations, and organizing activities — featuring interactive maps, multi-step booking flows, and multi-role support.",
+    techStack: [
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "Mongoose",
+      "Express",
+      "Tailwind CSS",
+      "Framer Motion",
+      "Redux",
+    ],
+    image: "https://i.ibb.co.com/CGSy4Gt/optimal-wealth.jpg",
+    liveUrl: "https://optimal-wealth-advisors.vercel.app/",
+    // githubUrl: "https://github.com/MdNaimRipto/travel-buddy",
+  },
+  {
+    id: "4",
     title: "TRAVEL BUDDY",
     sub: "Travel Management / Full Stack",
     description:
@@ -32,7 +92,7 @@ export const projects: Project[] = [
     // githubUrl: "https://github.com/MdNaimRipto/travel-buddy",
   },
   {
-    id: "2",
+    id: "5",
     title: "EVENTIDE MOMENTO",
     sub: "Event Management / Full Stack",
     description:
@@ -52,7 +112,7 @@ export const projects: Project[] = [
     // githubUrl: "https://github.com/MdNaimRipto/Eventide-Momento",
   },
   {
-    id: "3",
+    id: "6",
     title: "TECH MART",
     sub: "E-commerce / Full Stack",
     description:
@@ -72,7 +132,7 @@ export const projects: Project[] = [
     // githubUrl: "https://github.com/MdNaimRipto/tech-mart",
   },
   {
-    id: "4",
+    id: "7",
     title: "BETTER PLATE",
     sub: "Meal Subscription / Full Stack",
     description:
@@ -92,7 +152,7 @@ export const projects: Project[] = [
     // githubUrl: "https://github.com/MdNaimRipto/Better-Plate",
   },
   {
-    id: "5",
+    id: "8",
     title: "GEORGIA",
     sub: "Photography Portfolio / Frontend",
     description:
@@ -103,7 +163,7 @@ export const projects: Project[] = [
     // githubUrl: "https://github.com/shathipaul/photograpy-website",
   },
   {
-    id: "6",
+    id: "9",
     title: "GRAND DUCHY",
     sub: "E-book Platform / Full Stack",
     description:
@@ -114,7 +174,7 @@ export const projects: Project[] = [
     // githubUrl: "https://github.com/MdNaimRipto/grand-duchy-demo",
   },
   {
-    id: "7",
+    id: "10",
     title: "JESSICA PRISTON",
     sub: "Journalist Portfolio / Frontend",
     description:

@@ -28,7 +28,7 @@ export function BlogsPage({ posts }: BlogsPageProps) {
       <div className="mt-[5vh] flex flex-col">
         {posts.map((post, i) => (
           <motion.div
-            key={post._id}
+            key={post.slug}
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{

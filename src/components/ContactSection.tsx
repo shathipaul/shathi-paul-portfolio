@@ -108,8 +108,8 @@ export function ContactSection({ profile }: ContactSectionProps) {
               href={profile.socials.calendly}
               target="_blank"
               rel="noopener noreferrer"
-              className="group self-start inline-flex items-center gap-3 bg-accent text-[#F7F5EF] border border-transparent px-6 py-2.5 text-[clamp(0.65rem,0.8vw,0.9rem)] font-light tracking-[0.2em] uppercase hover:opacity-90 transition-colors duration-300"
-              style={{ color: "#F7F5EF" }}
+              className="group self-start inline-flex items-center gap-3 bg-transparent border px-6 py-2.5 text-[clamp(0.65rem,0.8vw,0.9rem)] font-light tracking-[0.2em] uppercase hover:opacity-80 transition-colors duration-300"
+              style={{ borderColor: "var(--olive)", color: "var(--olive)" }}
             >
               <span>Let&apos;s Talk</span>
               <svg

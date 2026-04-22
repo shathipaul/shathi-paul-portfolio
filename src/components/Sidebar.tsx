@@ -23,11 +23,12 @@ function NavLink({ href, label, displayLabel, onNavigate }: NavLinkProps) {
 
   return (
     <Link
+      style={{ color: "#e5e5e5" }}
       href={href}
       onClick={onNavigate}
       className={`group relative block w-[clamp(3.5rem,7vw,10rem)] py-1 text-[clamp(0.4rem,2vw,1.5rem)] md:text-[clamp(0.8rem,1vw,1.5rem)] font-light uppercase tracking-widest transition-colors duration-500 ${
         active
-          ? "text-foreground dark:text-white"
+          ? "text-white"
           : "text-neutral-500 hover:text-foreground dark:text-[#ffffff77] dark:hover:text-white"
       }`}
     >
@@ -99,7 +100,7 @@ export function Sidebar({ profile }: SidebarProps) {
                 {...(external
                   ? { target: "_blank", rel: "noopener noreferrer" }
                   : {})}
-                className="text-neutral-500 transition-colors hover:text-foreground dark:text-neutral-300 dark:hover:text-white"
+                className="text-foreground-secondary transition-colors hover:text-foreground"
                 aria-label={label}
               >
                 <Icon
@@ -171,7 +172,7 @@ export function Sidebar({ profile }: SidebarProps) {
                       {...(external
                         ? { target: "_blank", rel: "noopener noreferrer" }
                         : {})}
-                      className="text-neutral-400 transition-colors hover:text-white"
+                      className="text-foreground-secondary transition-colors hover:text-foreground"
                       aria-label={label}
                     >
                       <Icon className="h-5 w-5" aria-hidden />

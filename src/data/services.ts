@@ -27,7 +27,7 @@ export const services: Service[] = [
     id: "01",
     title: "Landing Pages",
     description:
-      "A single, focused page engineered to convert — whether you're running ads, launching a service, or capturing leads. Built for speed, optimized for search, and designed to make a strong first impression.",
+      "A single, focused page engineered to convert, whether you're running ads, launching a service, or capturing leads. Built for speed, optimized for search, and designed to make a strong first impression.",
     deliverables: [
       "Core Web Vitals optimized (90+ Lighthouse score)",
       "Conversion-focused layout & copywriting structure",
@@ -125,7 +125,7 @@ export const faqs: Faq[] = [
     id: "01",
     question: "What does the process look like?",
     answer:
-      "It starts with a short discovery call to understand your goals, audience, and any existing assets like a brand kit or Figma file. From there I send a proposal, we align on scope, and work begins once the deposit is confirmed. You'll see a working build before final delivery — no surprises.",
+      "It starts with a short discovery call to understand your goals, audience, and any existing assets like a brand kit or Figma file. From there I send a proposal, we align on scope, and work begins once the deposit is confirmed. You'll see a working build before final delivery.",
   },
   {
     id: "02",
@@ -149,7 +149,7 @@ export const faqs: Faq[] = [
     id: "05",
     question: "Can you handle deployment and hosting?",
     answer:
-      "Yes — deployment is included in every project. I configure hosting on Vercel or Netlify, connect your custom domain, set up environment variables, and run post-launch checks before handoff. You get a production-ready site, not just finished code.",
+      "Yes, deployment is included in every project. I configure hosting on Vercel or Netlify, connect your custom domain, set up environment variables, and run post-launch checks before handoff. You get a production-ready site, not just finished code.",
   },
   {
     id: "06",
@@ -161,6 +161,6 @@ export const faqs: Faq[] = [
     id: "07",
     question: "Do you offer maintenance after the project ends?",
     answer:
-      "Yes. Most of my clients stay on a monthly retainer after launch for ongoing updates, performance monitoring, and new feature work. If your needs are lighter, a flexible hourly arrangement works too — we'll figure out what makes sense for your situation.",
+      "Yes. Most of my clients stay on a monthly retainer after launch for ongoing updates, performance monitoring, and new feature work. If your needs are lighter, a flexible hourly arrangement works too. We'll figure out what makes sense for your situation.",
   },
 ];

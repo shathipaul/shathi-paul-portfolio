@@ -89,10 +89,11 @@ export function ServicesPage({
             Services
           </h1>
           <a
+            style={{ color: "#c97d50" }}
             href={profile.socials.calendly}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[clamp(0.7rem,0.9vw,1rem)] font-light mb-1 text-foreground-secondary hover:text-foreground transition-colors duration-300"
+            className="text-[clamp(0.7rem,0.9vw,1rem)] font-light mb-1 text-accent hover:text-foreground transition-colors duration-300"
           >
             /book a call
           </a>
@@ -256,10 +257,10 @@ export function ServicesPage({
               {/* CTA */}
               <Link
                 href={`mailto:${profile.email}?subject=${encodeURIComponent(`${tier.name} Package Inquiry`)}`}
-                className={`group mt-2 inline-flex items-center gap-2.5 text-[clamp(0.62rem,0.8vw,0.9rem)] font-light tracking-[0.2em] uppercase transition-opacity duration-300 ${
+                className={`group mt-2 inline-flex items-center text-accent gap-2.5 text-[clamp(0.62rem,0.8vw,0.9rem)] font-light tracking-[0.2em] uppercase transition-opacity duration-300 ${
                   tier.highlighted
-                    ? "text-[#F7F5EF] hover:opacity-80"
-                    : "text-foreground hover:opacity-60"
+                    ? "text-accent hover:opacity-80"
+                    : "text-accent hover:opacity-60"
                 }`}
               >
                 <span>{tier.cta}</span>
@@ -278,7 +279,7 @@ export function ServicesPage({
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
       >
-        Prices are starting points — every project is different.{" "}
+        Prices are starting points. Every project is different.{" "}
         <a
           href={profile.socials.calendly}
           target="_blank"
@@ -338,8 +339,8 @@ export function ServicesPage({
                     }`}
                     aria-hidden
                   >
-                    <span className="absolute top-1/2 left-0 w-full h-px bg-foreground -translate-y-1/2" />
-                    <span className="absolute left-1/2 top-0 h-full w-px bg-foreground -translate-x-1/2" />
+                    <span className="absolute top-1/2 left-0 w-full h-px bg-olive -translate-y-1/2" />
+                    <span className="absolute left-1/2 top-0 h-full w-px bg-olive -translate-x-1/2" />
                   </span>
                 </button>
 

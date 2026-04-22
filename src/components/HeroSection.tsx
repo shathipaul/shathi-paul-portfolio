@@ -147,7 +147,8 @@ export function HeroSection({ profile }: HeroSectionProps) {
 
           <Link
             href="/works"
-            className="group inline-flex items-center gap-3 bg-card border border-olive text-olive px-[clamp(1.5rem,2vw,2.25rem)] py-[clamp(0.7rem,0.9vw,1rem)] text-[clamp(0.65rem,0.8vw,0.9rem)] font-light tracking-[0.2em] uppercase hover:bg-olive/10 hover:text-foreground transition-colors duration-300"
+            className="group inline-flex items-center gap-3 bg-transparent border px-[clamp(1.5rem,2vw,2.25rem)] py-[clamp(0.7rem,0.9vw,1rem)] text-[clamp(0.65rem,0.8vw,0.9rem)] font-light tracking-[0.2em] uppercase hover:opacity-80 transition-colors duration-300"
+            style={{ borderColor: "var(--olive)", color: "var(--olive)" }}
           >
             <span>View Works</span>
             <ArrowIcon />

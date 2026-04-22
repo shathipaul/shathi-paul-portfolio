@@ -30,7 +30,7 @@ function ProjectThumbnail({
       data-cursor="view"
     >
       <Link
-        href={`/works/${project.id}`}
+        href={`${project.liveUrl}`}
         className="relative block w-full aspect-2/1 overflow-hidden"
       >
         <div className="absolute inset-0 bg-neutral-900" />
@@ -61,10 +61,11 @@ export function WorksClient({ projects }: WorksClientProps) {
         <div className="flex flex-row items-end justify-between mb-1">
           <h1 className="text-base font-light tracking-widest">WORKS</h1>
           <a
+            style={{ color: "#c97d50" }}
             href={profile.socials.calendly}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[clamp(0.7rem,0.9vw,1rem)] font-light mb-1 text-foreground-secondary hover:text-foreground transition-colors duration-300"
+            className="text-[clamp(0.7rem,0.9vw,1rem)] font-light mb-1 text-accent hover:text-foreground transition-colors duration-300"
           >
             /book a call
           </a>
@@ -83,7 +84,7 @@ export function WorksClient({ projects }: WorksClientProps) {
           >
             {/* Image — links to detail page */}
             <Link
-              href={`/works/${project.id}`}
+              href={`${project.liveUrl}`}
               className="relative block w-full aspect-2/1 overflow-hidden"
               data-cursor="view"
             >
@@ -133,7 +134,7 @@ export function WorksClient({ projects }: WorksClientProps) {
                       Live
                     </a>
                   )}
-                  {project.githubUrl && (
+                  {/* {project.githubUrl && (
                     <a
                       href={project.githubUrl}
                       target="_blank"
@@ -142,7 +143,7 @@ export function WorksClient({ projects }: WorksClientProps) {
                     >
                       GitHub
                     </a>
-                  )}
+                  )} */}
                 </div>
               )}
             </div>
@@ -188,10 +189,11 @@ export function WorksClient({ projects }: WorksClientProps) {
               WORKS
             </h1>
             <a
+              style={{ color: "#c97d50" }}
               href={profile.socials.calendly}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[clamp(0.7rem,0.9vw,1rem)] font-light mb-1 text-foreground-secondary hover:text-foreground transition-colors duration-300"
+              className="text-[clamp(0.7rem,0.9vw,1rem)] font-light mb-1 text-accent hover:text-foreground transition-colors duration-300"
             >
               /book a call
             </a>

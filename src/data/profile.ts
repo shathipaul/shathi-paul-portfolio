@@ -1,4 +1,4 @@
-import profileImage from "@/assets/image.png";
+import profileImage from "@/assets/image-2.png";
 
 const profileData = {
   firstName: "Shathi",

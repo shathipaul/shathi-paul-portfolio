@@ -167,8 +167,8 @@ export function TestimonialsSection() {
           {testimonials.map((t) => (
             <article
               key={t.id}
-              style={cardStyle}
-              className={`shrink-0 flex flex-col gap-5 bg-card border border-border p-[clamp(1.5rem,2vw,2rem)] min-h-[clamp(18rem,32vh,26rem)] ${cardFallbackClass}`}
+              style={{ ...cardStyle, border: "0.5px solid var(--border-tone)" }}
+              className={`shrink-0 flex flex-col gap-5 bg-card p-[clamp(1.5rem,2vw,2rem)] min-h-[clamp(18rem,32vh,26rem)] ${cardFallbackClass}`}
             >
               {/* Index + quote mark */}
               <div className="flex items-start justify-between">

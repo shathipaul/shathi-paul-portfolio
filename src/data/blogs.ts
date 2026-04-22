@@ -17,7 +17,7 @@ export const blogPosts: BlogPost[] = [
     date: "February 3, 2026",
     excerpt:
       "Discover how to design clean, scalable, and high-performance APIs with proper versioning, error handling, and modern best practices.",
-    image: "https://i.ibb.co.com/60DRGpWv/fab-1.png",
+    image: "https://i.ibb.co.com/TBNqKf6Z/blog-1.png",
     content: `<p>Your website is slow.</p>
 
 <p>And it's costing you money. Real money. The kind that shows up in your bank account at the end of the month.</p>
