@@ -62,9 +62,9 @@ export function BlogsPage({ posts }: BlogsPageProps) {
                   <span className="text-[clamp(0.6rem,0.8vw,0.85rem)] font-light tracking-[0.3em] text-neutral-500 shrink-0">
                     [{String(i + 1).padStart(2, "0")}]
                   </span>
-                  <span className="text-[clamp(0.55rem,0.7vw,0.75rem)] font-light tracking-[0.25em] uppercase border border-[#888888aa] rounded-full px-3 py-0.5">
+                  {/* <span className="text-[clamp(0.55rem,0.7vw,0.75rem)] font-light tracking-[0.25em] uppercase border border-[#888888aa] rounded-full px-3 py-0.5">
                     {post.category}
-                  </span>
+                  </span> */}
                 </div>
 
                 {/* Title + excerpt */}

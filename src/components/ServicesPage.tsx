@@ -255,8 +255,10 @@ export function ServicesPage({
               </ul>
 
               {/* CTA */}
-              <Link
-                href={`mailto:${profile.email}?subject=${encodeURIComponent(`${tier.name} Package Inquiry`)}`}
+              <a
+                href={profile.socials.calendly}
+                target="_blank"
+                rel="noopener noreferrer"
                 className={`group mt-2 inline-flex items-center text-accent gap-2.5 text-[clamp(0.62rem,0.8vw,0.9rem)] font-light tracking-[0.2em] uppercase transition-opacity duration-300 ${
                   tier.highlighted
                     ? "text-accent hover:opacity-80"
@@ -265,7 +267,7 @@ export function ServicesPage({
               >
                 <span>{tier.cta}</span>
                 <ArrowIcon />
-              </Link>
+              </a>
             </motion.div>
           ))}
         </div>

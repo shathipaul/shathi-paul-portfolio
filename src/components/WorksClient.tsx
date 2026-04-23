@@ -29,7 +29,9 @@ function ProjectThumbnail({
       viewport={{ margin: "-40% 0px -40% 0px" }}
       data-cursor="view"
     >
-      <Link
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
         href={`${project.liveUrl}`}
         className="relative block w-full aspect-2/1 overflow-hidden"
       >
@@ -41,7 +43,7 @@ function ProjectThumbnail({
           className="object-cover object-top opacity-80"
           sizes="35vw"
         />
-      </Link>
+      </a>
     </motion.div>
   );
 }
@@ -83,7 +85,9 @@ export function WorksClient({ projects }: WorksClientProps) {
             transition={{ duration: 1.2, ease: "easeOut", delay: i * 0.1 }}
           >
             {/* Image — links to detail page */}
-            <Link
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
               href={`${project.liveUrl}`}
               className="relative block w-full aspect-2/1 overflow-hidden"
               data-cursor="view"
@@ -96,7 +100,7 @@ export function WorksClient({ projects }: WorksClientProps) {
                 className="object-cover object-top opacity-80"
                 sizes="80vw"
               />
-            </Link>
+            </a>
 
             {/* Project info */}
             <div className="flex flex-col gap-1 pt-1">

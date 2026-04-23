@@ -1,7 +1,7 @@
 export interface BlogPost {
   slug: string;
   title: string;
-  category: string;
+  category?: string;
   date: string; // Display format, e.g. "Oct 5, 2025"
   excerpt: string;
   image?: string;
@@ -13,7 +13,6 @@ export const blogPosts: BlogPost[] = [
     slug: "performance-is-profit-how-website-speed-directly-impacts-revenue-for-modern-businesses",
     title:
       "Performance Is Profit: How Website Speed Directly Impacts Revenue for Modern Businesses",
-    category: "Backend",
     date: "February 3, 2026",
     excerpt:
       "Discover how to design clean, scalable, and high-performance APIs with proper versioning, error handling, and modern best practices.",

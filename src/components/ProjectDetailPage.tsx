@@ -240,9 +240,9 @@ export function ProjectDetailPage({ project }: ProjectDetailPageProps) {
                 key={category}
                 className="flex flex-col gap-2 lg:flex-row lg:items-start lg:gap-8"
               >
-                <span className="text-[clamp(0.55rem,0.7vw,0.75rem)] font-light tracking-[0.25em] uppercase text-neutral-600 dark:text-neutral-400 lg:w-[7vw] shrink-0 pt-0.5">
+                {/* <span className="text-[clamp(0.55rem,0.7vw,0.75rem)] font-light tracking-[0.25em] uppercase text-neutral-600 dark:text-neutral-400 lg:w-[7vw] shrink-0 pt-0.5">
                   {category}
-                </span>
+                </span> */}
                 <div className="flex gap-2 flex-wrap">
                   {techs.map((tech) => (
                     <span

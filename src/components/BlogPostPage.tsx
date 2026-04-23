@@ -29,9 +29,30 @@ export function BlogPostPage({ post }: BlogPostPageProps) {
             xmlns="http://www.w3.org/2000/svg"
             aria-hidden
           >
-            <line x1="0" y1="15" x2="56" y2="15" stroke="currentColor" strokeWidth="2.5" />
-            <line x1="40" y1="3" x2="56" y2="16" stroke="currentColor" strokeWidth="2.5" />
-            <line x1="40" y1="27" x2="56" y2="14" stroke="currentColor" strokeWidth="2.5" />
+            <line
+              x1="0"
+              y1="15"
+              x2="56"
+              y2="15"
+              stroke="currentColor"
+              strokeWidth="2.5"
+            />
+            <line
+              x1="40"
+              y1="3"
+              x2="56"
+              y2="16"
+              stroke="currentColor"
+              strokeWidth="2.5"
+            />
+            <line
+              x1="40"
+              y1="27"
+              x2="56"
+              y2="14"
+              stroke="currentColor"
+              strokeWidth="2.5"
+            />
           </svg>
           <span>All Posts</span>
         </Link>
@@ -64,9 +85,9 @@ export function BlogPostPage({ post }: BlogPostPageProps) {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, ease: "easeOut", delay: 0.15 }}
       >
-        <span className="text-[clamp(0.55rem,0.7vw,0.75rem)] font-light tracking-[0.25em] uppercase border border-[#888888aa] rounded-full px-3 py-0.5 self-start">
+        {/* <span className="text-[clamp(0.55rem,0.7vw,0.75rem)] font-light tracking-[0.25em] uppercase border border-[#888888aa] rounded-full px-3 py-0.5 self-start">
           {post.category}
-        </span>
+        </span> */}
         <h1 className="text-[clamp(1.4rem,2.5vw,3rem)] font-light leading-tight">
           {post.title}
         </h1>

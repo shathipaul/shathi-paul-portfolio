@@ -18,7 +18,7 @@ export async function POST(req: Request) {
       from: envConfig.EMAIL_USER,
       to: envConfig.EMAIL_USER,
       replyTo: email,
-      cc: "naimurtsc567@gmail.com",
+      cc: "shathi@hashtagshathi.com",
       subject: `New Contact from ${name}`,
       text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
     });

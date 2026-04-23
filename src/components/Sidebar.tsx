@@ -23,7 +23,6 @@ function NavLink({ href, label, displayLabel, onNavigate }: NavLinkProps) {
 
   return (
     <Link
-      style={{ color: "#e5e5e5" }}
       href={href}
       onClick={onNavigate}
       className={`group relative block w-[clamp(3.5rem,7vw,10rem)] py-1 text-[clamp(0.4rem,2vw,1.5rem)] md:text-[clamp(0.8rem,1vw,1.5rem)] font-light uppercase tracking-widest transition-colors duration-500 ${
@@ -120,7 +119,7 @@ export function Sidebar({ profile }: SidebarProps) {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.35, ease: "easeOut" }}
-            className="fixed inset-0 z-60 bg-neutral-950/95 backdrop-blur-sm lg:hidden"
+            className="fixed inset-0 z-60 bg-neutral-950/95 text-white backdrop-blur-sm lg:hidden"
           >
             <div className="flex h-full flex-col">
               <div className="flex items-center justify-between border-b border-neutral-800 px-4 py-4">

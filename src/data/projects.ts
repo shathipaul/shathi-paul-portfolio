@@ -14,14 +14,13 @@ export const projects: Project[] = [
   {
     id: "1",
     title: "TERM LIFE USA",
-    sub: "Insurance / Full Stack",
+    sub: "Insurance Tech / Full Stack",
     description:
-      "A travel management platform for planning trips, managing destinations, and organizing activities — featuring interactive maps, multi-step booking flows, and multi-role support.",
+      "A term life insurance platform for comparing quotes, selecting plans, and applying online, featuring real-time quotes from top carriers, DocuSign integration, and licensed advisor support.",
     techStack: [
       "Next.js",
       "TypeScript",
       "Node.js",
-      "Mongoose",
       "Express",
       "Tailwind CSS",
       "Framer Motion",
@@ -34,19 +33,10 @@ export const projects: Project[] = [
   {
     id: "2",
     title: "OptimalFolio",
-    sub: "Financial Portfolio Management",
+    sub: "Investment Advisory",
     description:
-      "A travel management platform for planning trips, managing destinations, and organizing activities — featuring interactive maps, multi-step booking flows, and multi-role support.",
-    techStack: [
-      "Next.js",
-      "TypeScript",
-      "Node.js",
-      "Mongoose",
-      "Express",
-      "Tailwind CSS",
-      "Framer Motion",
-      "Redux",
-    ],
+      "A registered investment advisor platform for ETF-based portfolio management, featuring institutional-grade strategies from BlackRock, Goldman Sachs & JP Morgan, with virtual consultation booking.",
+    techStack: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
     image: "https://i.ibb.co.com/v6rQPDyv/optimalfolio.jpg",
     liveUrl: "https://optimal-folios.vercel.app/",
     // githubUrl: "https://github.com/MdNaimRipto/travel-buddy",
@@ -54,19 +44,10 @@ export const projects: Project[] = [
   {
     id: "3",
     title: "Optimal Wealth Advisors",
-    sub: "Financial Advisory",
+    sub: "Retirement Planning",
     description:
-      "A travel management platform for planning trips, managing destinations, and organizing activities — featuring interactive maps, multi-step booking flows, and multi-role support.",
-    techStack: [
-      "Next.js",
-      "TypeScript",
-      "Node.js",
-      "Mongoose",
-      "Express",
-      "Tailwind CSS",
-      "Framer Motion",
-      "Redux",
-    ],
+      "A fiduciary retirement advisory platform for adults 55+, featuring personalized income, tax & protection planning, free one-on-one strategy sessions, and a simple 3-step consultation booking flow.",
+    techStack: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
     image: "https://i.ibb.co.com/CGSy4Gt/optimal-wealth.jpg",
     liveUrl: "https://optimal-wealth-advisors.vercel.app/",
     // githubUrl: "https://github.com/MdNaimRipto/travel-buddy",
@@ -96,7 +77,7 @@ export const projects: Project[] = [
     title: "EVENTIDE MOMENTO",
     sub: "Event Management / Full Stack",
     description:
-      "A full-stack event management platform for creating, managing, and attending events — with invitations, location-based filtering, ticketing, refunds, and role-based access control.",
+      "A full-stack event management platform for creating, managing, and attending events with invitations, location-based filtering, ticketing, refunds, and role-based access control.",
     techStack: [
       "Next.js",
       "TypeScript",

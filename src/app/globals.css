@@ -61,6 +61,11 @@ a {
   color: inherit;
 }
 
+::selection {
+  background: #6b7a52;
+  color: #ffffff;
+}
+
 /* Hide native cursor — custom cursor renders instead */
 * {
   cursor: none !important;

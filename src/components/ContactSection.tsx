@@ -2,8 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { HiOutlineMail } from "react-icons/hi";
+import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 import type { Profile } from "@/data/profile";
 
 interface ContactSectionProps {
@@ -36,7 +35,7 @@ export function ContactSection({ profile }: ContactSectionProps) {
   const socials = [
     { href: profile.socials.linkedin, Icon: FaLinkedin, label: "LinkedIn" },
     { href: profile.socials.github, Icon: FaGithub, label: "GitHub" },
-    { href: profile.socials.mail, Icon: HiOutlineMail, label: "Email" },
+    { href: profile.socials.instagram, Icon: FaInstagram, label: "Instagram" },
   ];
 
   return (
