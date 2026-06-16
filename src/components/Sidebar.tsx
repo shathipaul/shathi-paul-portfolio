@@ -2,6 +2,7 @@
 
 import { Menu, X } from "lucide-react";
 import { FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import { HiOutlineMail } from "react-icons/hi";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -63,8 +64,9 @@ export function Sidebar({ profile }: SidebarProps) {
 
   const socialIcons = [
     { href: profile.socials.linkedin, Icon: FaLinkedin, label: "LinkedIn" },
-    { href: profile.socials.instagram, Icon: FaInstagram, label: "Instagram" },
     { href: profile.socials.github, Icon: FaGithub, label: "GitHub" },
+    { href: profile.socials.instagram, Icon: FaInstagram, label: "Instagram" },
+    { href: profile.socials.x, Icon: FaXTwitter, label: "X / Twitter" },
     { href: profile.socials.mail, Icon: HiOutlineMail, label: "Email" },
   ];
 

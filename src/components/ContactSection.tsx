@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import type { Profile } from "@/data/profile";
 
 interface ContactSectionProps {
@@ -36,6 +37,7 @@ export function ContactSection({ profile }: ContactSectionProps) {
     { href: profile.socials.linkedin, Icon: FaLinkedin, label: "LinkedIn" },
     { href: profile.socials.github, Icon: FaGithub, label: "GitHub" },
     { href: profile.socials.instagram, Icon: FaInstagram, label: "Instagram" },
+    { href: profile.socials.x, Icon: FaXTwitter, label: "X / Twitter" },
   ];
 
   return (

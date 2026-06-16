@@ -19,8 +19,9 @@ const profileData = {
   ],
   socials: {
     linkedin: "https://www.linkedin.com/in/shathipaul",
-    instagram: "https://www.instagram.com/",
+    instagram: "https://www.instagram.com/hashtagshathi",
     github: "https://github.com/shathipaul",
+    x: "https://x.com/hashtagshathi",
     mail: "mailto:shathi@hashtagshathi.com",
     calendly:
       "https://calendly.com/shathi-paul/website-strategy-call-with-shathi-paul",
