@@ -89,7 +89,7 @@ export function Sidebar({ profile }: SidebarProps) {
           <NavLink href="/" label="Home" displayLabel="HOME" />
           <NavLink href="/works" label="Works" displayLabel="WORKS" />
           <NavLink href="/services" label="Services" displayLabel="SERVICES" />
-          <NavLink href="/blogs" label="Blogs" displayLabel="BLOGS" />
+          {/* <NavLink href="/blogs" label="Blogs" displayLabel="BLOGS" /> */}
         </nav>
         <div className="flex flex-col items-start gap-4 pt-8">
           {socialIcons.map(({ href, Icon, label }) => {

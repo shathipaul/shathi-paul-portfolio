@@ -5,7 +5,6 @@ import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import type { Project } from "@/data/projects";
 import { profile } from "@/data/profile";
-import Link from "next/link";
 
 interface WorksClientProps {
   projects: Project[];

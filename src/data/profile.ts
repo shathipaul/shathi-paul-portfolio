@@ -23,8 +23,7 @@ const profileData = {
     github: "https://github.com/shathipaul",
     x: "https://x.com/hashtagshathi",
     mail: "mailto:shathi@hashtagshathi.com",
-    calendly:
-      "https://calendly.com/shathi-paul/website-strategy-call-with-shathi-paul",
+    calendly: "https://calendly.com/shathi-hashtagshathi/30min",
   },
 } as const;
 

@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import Link from "next/link";
 import type { Service, PricingTier, Faq } from "@/data/services";
 import { profile } from "@/data/profile";
 

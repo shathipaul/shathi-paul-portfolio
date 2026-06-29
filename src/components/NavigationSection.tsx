@@ -12,9 +12,30 @@ function ArrowIcon() {
       xmlns="http://www.w3.org/2000/svg"
       aria-hidden
     >
-      <line x1="0.2" y1="50.2" x2="100.2" y2="50.2" stroke="currentColor" strokeWidth="4" />
-      <line x1="65.4" y1="15.2" x2="100.8" y2="50.6" stroke="currentColor" strokeWidth="4" />
-      <line x1="65.4" y1="85.2" x2="100.8" y2="49.9" stroke="currentColor" strokeWidth="4" />
+      <line
+        x1="0.2"
+        y1="50.2"
+        x2="100.2"
+        y2="50.2"
+        stroke="currentColor"
+        strokeWidth="4"
+      />
+      <line
+        x1="65.4"
+        y1="15.2"
+        x2="100.8"
+        y2="50.6"
+        stroke="currentColor"
+        strokeWidth="4"
+      />
+      <line
+        x1="65.4"
+        y1="85.2"
+        x2="100.8"
+        y2="49.9"
+        stroke="currentColor"
+        strokeWidth="4"
+      />
     </svg>
   );
 }
@@ -22,7 +43,7 @@ function ArrowIcon() {
 const NAV_LINKS = [
   { href: "/works", label: "WORKS" },
   { href: "/services", label: "SERVICES" },
-  { href: "/blogs", label: "BLOGS" },
+  // { href: "/blogs", label: "BLOGS" },
 ];
 
 export default function NavigationSection() {
