@@ -20,5 +20,5 @@ export const skills = {
     "Redis",
     "REST API",
   ],
-  tools: ["Git", "VSCode", "Cursor", "Figma", "Postman", "Docker", "Windojws"],
+  tools: ["Git", "VSCode", "Cursor", "Figma", "Postman", "Docker", "Windows"],
 };

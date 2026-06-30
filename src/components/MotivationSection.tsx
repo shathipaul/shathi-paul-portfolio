@@ -37,7 +37,7 @@ export function MotivationSection({ profile }: MotivationSectionProps) {
       <div className="mt-[5vh] w-[80vw] aspect-8/5 lg:w-[45vw] overflow-hidden lg:mt-0">
         <Image
           src={profile.motivationImage}
-          alt="Cinematic landscape photograph"
+          alt="Image of Shathi Paul"
           width={800}
           height={500}
           className="w-full h-full object-contain opacity-80"
