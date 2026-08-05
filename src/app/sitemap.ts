@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { apiConfig } from "@/lib/apiConfig";
 import type { IBlogs } from "@/lib/apiConfig";
 
-const BASE_URL = "https://naimurrahman.dev";
+const BASE_URL = "https://www.hashtagshathi.com";
 
 async function fetchBlogIds(): Promise<string[]> {
   try {
