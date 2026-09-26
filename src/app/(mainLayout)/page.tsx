@@ -16,7 +16,7 @@ export default function Home() {
       <MotivationSection profile={profile} />
 
       {/* Section 3: Skills */}
-      <SkillsSection />
+      {/* <SkillsSection /> */}
 
       {/* Section 4: Testimonials */}
       <TestimonialsSection />
